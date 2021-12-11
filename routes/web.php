@@ -28,7 +28,7 @@ Route::get('/', function () {
     // ddd($document->matter("date")); // Equivalent to '$document->date'. Get the metadata as an array
     
     
-    $posts = Post::get_all_posts();
+    $posts = Post::all();
     // // ddd($posts[1]-> getContents()); // Get contents of each post , 0 based 
     return view('posts',[
         'posts' => $posts
