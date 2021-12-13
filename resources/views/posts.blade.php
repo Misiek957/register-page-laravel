@@ -128,7 +128,7 @@
                         <div class="flex items-center text-sm">
                             {{-- <img src="./images/lary-avatar.svg" alt="Lary avatar"> --}}
                             <div class="ml-3">
-                                <h5 class="font-bold">Mike</h5>
+                                <h5 class="font-bold">{{$posts[0]->user->name;}}</h5>
                                 <h6>Senior Learner</h6>
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                             <div class="flex items-center text-sm">
                                 {{-- <img src="./images/lary-avatar.svg" alt="Lary avatar"> --}}
                                 <div class="ml-3">
-                                    <h5 class="font-bold">Mike</h5>
+                                    <h5 class="font-bold">{{$posts[$post]->user->name;}}</h5>
                                     <h6>Senior Learner</h6>
                                 </div>
                             </div>
@@ -252,7 +252,7 @@
                             <div class="flex items-center text-sm">
                                 {{-- <img src="./images/lary-avatar.svg" alt="Lary avatar"> --}}
                                 <div class="ml-3">
-                                    <h5 class="font-bold">Mike</h5>
+                                    <h5 class="font-bold">{{$posts[$post]->user->name;}}</h5>
                                     <h6>Senior Learner</h6>
                                 </div>
                             </div>
