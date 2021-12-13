@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LikesController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Post; //include the post class 
 use Spatie\YamlFrontMatter\YamlFrontMatter;
@@ -65,3 +66,6 @@ Route::get('account',[UserController::class, 'create'])->middleware('auth', 'bul
 
 Route::put('update',[UserController::class, 'update'])->middleware('auth');
 Route::delete('delete',[UserController::class, 'destroy'])->middleware('auth');
+
+// Likes
+Route::post('/like/{post_id}',[LikesController::class, 'store'])->name('add_like');
